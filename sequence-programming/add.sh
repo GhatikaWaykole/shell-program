@@ -8,5 +8,6 @@ echo $result
 read -p "enter first number:" x
 read -p "ener the second number:" y
 result2=$(($x+$y))
+echo thre result is first and second number
 echo $result2
 
