@@ -10,7 +10,7 @@ if [[ $a>$b && $a>$c && $a>$d && $a>$aa ]];
 then 
 	echo $a is maximum number 
 fi
-if [[ $b >$a && $b>$c && $b>$d && $b>$aa ]];
+if [[ $b>$a && $b>$c && $b>$d && $b>$aa ]];
 then
 	echo $b is Maximum number
 fi
@@ -43,4 +43,5 @@ then
 else
 	echo $aa is minimum number
 fi
+
 

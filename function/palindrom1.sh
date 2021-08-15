@@ -1,22 +1,39 @@
 #!/bin/bash -x
-
+number;
 function pal() {
 echo enter the number
 read n
 number=$n
-reverse=0
-
+rev=0
 while [ $n -gt 0 ]
 do
-a=`expr $n % 10 `
-n=`expr $n / 10 `
-reverse=`expr $reverse \* 10 + $a`
+rem=$(($n%10));
+rev=$(($rev*10+$rem));
+n=$(($n/10));
 done
-echo $reverse
-
+if [ $rev -eq $number ]
+then 
+return $rev
+else
+return 0
+fi
 }
 
-a=$(pal)
-b=$(pal)
+pal
+$rev=$?
+result=$rev
+pal
+$rev=$?
+result1=$rev
+if [ $result -eq $result1 ]
+then
+echo Number are palindrom
+else
+echo Number is not palindrom
+fi
+
+
+
+
 
 
